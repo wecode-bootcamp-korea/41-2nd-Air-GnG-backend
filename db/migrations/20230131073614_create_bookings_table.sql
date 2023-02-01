@@ -2,7 +2,7 @@
 CREATE TABLE bookings (
   id INT NOT NULL AUTO_INCREMENT,
   guest_id INT NOT NULL,
-  product_id INT NOT NULL,
+  room_id INT NOT NULL,
   guest_number INT NOT NULL,
   check_in_date DATE NOT NULL,
   check_out_date DATE NOT NULL,
@@ -11,7 +11,7 @@ CREATE TABLE bookings (
   created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY(id),
   FOREIGN KEY (guest_id) REFERENCES users(id),
-  FOREIGN KEY (product_id) REFERENCES products(id)
+  FOREIGN KEY (room_id) REFERENCES rooms(id)
 );
 
 -- migrate:down

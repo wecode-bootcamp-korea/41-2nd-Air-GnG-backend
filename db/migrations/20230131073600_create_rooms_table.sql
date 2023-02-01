@@ -1,5 +1,5 @@
 -- migrate:up
-CREATE TABLE products (
+CREATE TABLE rooms (
   id INT NOT NULL AUTO_INCREMENT,
   title VARCHAR(200) NOT NULL,
   description VARCHAR(1000) NOT NULL,
@@ -25,4 +25,4 @@ CREATE TABLE products (
 );
 
 -- migrate:down
-DROP TABLE products;
+DROP TABLE rooms;
