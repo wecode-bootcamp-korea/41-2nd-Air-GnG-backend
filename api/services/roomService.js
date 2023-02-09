@@ -10,7 +10,23 @@ const getRoomByDetail = async (roomId) => {
   return room;
 };
 
+const addRoomToWishList = async (userId, roomId) => {
+  return await roomDao.addRoomToWishList(userId, roomId);
+};
+
+const deleteWishList = async (userId, roomId) => {
+  const result = await roomDao.deleteWishList(userId, roomId);
+  return result;
+};
+
+const getMyWishList = async (userId) => {
+  const wishList = await roomDao.getMyWishList(userId);
+  return wishList;
+};
 module.exports = {
   getRooms,
   getRoomByDetail,
+  addRoomToWishList,
+  deleteWishList,
+  getMyWishList,
 };

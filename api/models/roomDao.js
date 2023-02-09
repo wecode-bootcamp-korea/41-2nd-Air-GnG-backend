@@ -77,7 +77,75 @@ const getRoomByDetail = async (roomId) => {
   }
 };
 
+const addRoomToWishList = async (userId, roomId) => {
+  try {
+    return await mysqlDatabase.query(
+      `
+      INSERT INTO wish_lists (
+        user_id,
+        room_id
+      ) VALUES (?, ?)
+      `,
+      [userId, roomId]
+    );
+  } catch (err) {
+    console.error(err.stack);
+    detectError('DATABASE_ERROR', 400);
+  }
+};
+
+const deleteWishList = async (userId, roomId) => {
+  try {
+    const result = mysqlDatabase.query(
+      `
+      DELETE FROM
+        wish_lists w
+      WHERE
+        w.room_id IN (?) AND w.user_id = ?
+      `,
+      [roomId, userId]
+    );
+    return result;
+  } catch (err) {
+    console.error(err.stack);
+    detectError('DATABASE_ERROR', 400);
+  }
+};
+
+const getMyWishList = async (userId) => {
+  try {
+    const wishList = await mysqlDatabase.query(
+      `
+      SELECT
+        w.id,
+        w.room_id,
+        r.title,
+        r.address,
+        r.price,
+        r.latitude,
+        r.longitude,
+        JSON_ARRAYAGG(
+              ri.image_url
+            ) as images
+      FROM wish_lists w
+      INNER JOIN rooms r ON w.room_id = r.id
+      INNER JOIN room_images ri ON ri.room_id = w.room_id
+      WHERE w.user_id = ?
+      GROUP BY w.id
+      `,
+      [userId]
+    );
+    return wishList;
+  } catch (err) {
+    console.error(err.stack);
+    detectError('DATABASE_ERROR', 400);
+  }
+};
+
 module.exports = {
   getRooms,
   getRoomByDetail,
+  addRoomToWishList,
+  deleteWishList,
+  getMyWishList,
 };
