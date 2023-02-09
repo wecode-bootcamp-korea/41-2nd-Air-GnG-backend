@@ -5,6 +5,12 @@ const getRooms = async (query) => {
   return result;
 };
 
+const getRoomByDetail = async (roomId) => {
+  const room = await roomDao.getRoomByDetail(roomId);
+  return room;
+};
+
 module.exports = {
   getRooms,
+  getRoomByDetail,
 };
