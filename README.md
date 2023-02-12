@@ -17,7 +17,7 @@
 | [<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white"/>](https://github.com/seuungkei) |
 
 ### Front-End Developsers
-| 이진경 (FE)| 김기윤 (FE)| 박채연 (FE)|
+| 김철호 (FE)| 김기윤 (FE)| 조윤환 (FE)| 박환성 (FE)|
 | :--: | :--: | :--: |
 | [<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white"/>](https://github.com/ijinkyung) | [<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white"/>](https://github.com/kiyoon0122) | [<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white"/>](https://github.com/cccodus313) |
 
@@ -48,26 +48,28 @@
 
 # <img height=30 src="https://img.shields.io/badge/Trello-0052CC?style=flat&logo=Trello&logoColor=white" />
 
-<img width="800" alt="image" src="https://velog.velcdn.com/images/pythakyu/post/06836bf8-d9e2-44c8-a73b-36c1f9ed4f0f/image.png">
+<img width="800" alt="image" src="https://velog.velcdn.com/images/khjtean/post/0f380e21-8742-4b2b-9c15-05f8d1478554/image.png">
 
 # DB
-<img width="800" alt="image" src="https://velog.velcdn.com/images/pythakyu/post/3ee1918d-f2bb-4d60-b446-4a54287a9df5/image.png">
+<img width="800" alt="image" src="https://velog.velcdn.com/images/khjtean/post/c70c3cc2-0c18-4d49-9449-80ad277783a9/image.png">
 
 
 
 # 구현 기능
 
 1. function/users
-  - Bcrypt 암호화 / JWT 발급 및 검증
-2. function/items
-  - 대륙별, 나라별 카테고리 상품 리스트 구성 및 상세페이지 리뷰 기능 구현
-3. function/carts
-  - 장바구니 생성, 조회, 삭제 기능 구현
-4. function/orders
-  - 결제 페이지에서 토큰을 활용한 주문자 정보 조회 기능 구현
+  - 카카오톡
+2. function/rooms
+  - 상세 페이지 및 메안 페이지 필터링 기능
+3. function/hosting
+  - 호스팅 페이지 
+4. function/booking
+  - 예약 관련
+5. function/wish-list
+  - 위시리스트
 
 # Reference
-- 이 프로젝트는 [Dr.Martin] 사이트를 참조하여 학습목적으로 만들었습니다.
+- 이 프로젝트는 [airbnb] 사이트를 참조하여 학습목적으로 만들었습니다.
 - 실무수준의 프로젝트이지만 학습용으로 만들었기 떄문에 이 코드를 활용하여 이득을 취하거나 무단 배포할 경우 법적으로 문제될 수 있습니다.
 - 이 프로젝트에서 사용하고 있는 사진 대부분은 위코드에서 구매한 것이므로 해당 프로젝트 외부인이 사용할 수 없습니다.
 - 이 프로젝트에서 사용하고 있는 로고와 배너는 해당 프로젝트 팀원 소유이므로 해당 프로젝트 외부인이 사용할 수 없습니다.
