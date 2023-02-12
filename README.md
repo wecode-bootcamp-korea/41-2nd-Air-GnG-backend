@@ -13,8 +13,8 @@
 
 ### Back-End Developers 
 | 김승기 (BE) |
-| :--: | :--: |
-| [<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white"/>](https://github.com/seuungkei) | [<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white"/>](https://github.com/pythakyu) |
+| :--: |
+| [<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white"/>](https://github.com/seuungkei) |
 
 ### Front-End Developsers
 | 이진경 (FE)| 김기윤 (FE)| 박채연 (FE)|
